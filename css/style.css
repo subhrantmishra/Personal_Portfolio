@@ -176,7 +176,7 @@ section.about .social a img{
    color:var(--ternary);
    font-family:'Lato', sans-serif;
    margin-bottom:8rem;
-    text-align: center;
+   text-align: center;
 }
 section.services{
     background:var(--light);
@@ -243,6 +243,168 @@ section.freelancer p{
     margin-bottom: 2rem;
     font-family:'Lato', sans-serif;
 }
+
+section.work {
+    background: var(--pure);
+    padding: 6rem 1rem; /* Add horizontal padding for small screens */
+}
+
+section.work .section-heading {
+    text-align: center;
+    line-height: 1.2;
+    margin-bottom: 2rem;
+    color: var(--secondary);
+}
+
+section.work .section-heading span {
+    color: var(--primary);
+}
+
+section.work .card-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    justify-items: center;
+}
+@media (max-width: 768px) {
+    section.work .card-wrapper {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+section.work .card {
+    background: var(--light);
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    width: 100%;
+    max-width: 600px; /* Limit max width */
+}
+
+section.work .card:hover {
+    transform: translateY(-5px);
+}
+
+section.work .card h2 {
+    font-size: 1.3rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+    text-align: center;
+    color: var(--secondary);
+    letter-spacing: 1.02px;
+}
+
+section.work .card p {
+    font-size: 0.9rem;
+    text-align: center;
+    font-weight: 600;
+    color: var(--secondary);
+}
+
+section.work .card ul.des {
+    list-style-type: square;
+    padding-left: 1.2rem;
+}
+
+section.work .card ul.des li {
+    font-family: 'Lato', sans-serif;
+    text-align: left;
+    font-size: 1rem;
+    color: var(--ternary);
+    margin-bottom: 0.5rem;
+}
+@media (max-width: 480px) {
+    section.work {
+        padding: 4rem 1rem;
+    }
+
+    section.work .card h2 {
+        font-size: 1.1rem;
+    }
+
+    section.work .card p {
+        font-size: 0.8rem;
+    }
+
+    section.work .card ul.des li {
+        font-size: 0.9rem;
+    }
+}
+
+section.projects{
+    background:var(--light);
+}
+section.projects .section-heading {
+    text-align: center;
+    line-height: 0.5;
+    margin-bottom: 1rem;
+    color: var(--secondary);
+}
+.projects-container {
+  max-width: 1000px;
+  margin: 50px auto;
+  padding: 20px;
+}
+
+.card {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  padding: 20px;
+  margin-bottom: 30px;
+}
+
+.project-title {
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.project-description {
+  font-size: 16px;
+  color: #555;
+}
+
+.view-images-btn {
+  margin-top: 15px;
+  padding: 8px 16px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.view-images-btn:hover {
+  background-color: #0056b3;
+}
+
+.project-images {
+  display: none;
+  margin-top: 20px;
+}
+
+.project-images img {
+  width: 500px;
+  height: 300px;
+  margin: 10px;
+  border-radius: 8px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.2);
+}
+
+@media (max-width: 600px) {
+  .project-images img {
+    width: 100%;
+  }
+}
+
+section.projects .section-heading span {
+    color: var(--primary);
+} 
 
 section.contact{
     background:var(--pure);
@@ -462,6 +624,9 @@ footer .copyright{
         margin-bottom: 3rem;
     }
     section.contact .card-wrapper{
+        grid-template-columns: repeat(1,1fr);
+    }
+     section.work .card-wrapper{
         grid-template-columns: repeat(1,1fr);
     }
     section.contact .input-wrap{
