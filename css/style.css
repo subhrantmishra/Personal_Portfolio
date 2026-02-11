@@ -95,7 +95,7 @@ header nav .branding{
     line-height:1.2;
     margin-bottom:2rem;
 }
-.hero .right h1 span{
+.hero .right h2 span{
     color:var(--primary);
 }
 .hero .right p{
